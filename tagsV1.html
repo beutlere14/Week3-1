@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<!--
+    tagsV1.html - this is a file to test the use of tags in html as well as ome beginning javascript functions. 
+    The javascript functions tested are document.write() and alert().
+    
+    Created by Eli Beutler
+    1/10/2022
+    For CSC102 class
+    elibeutler@gmail.com
+-->
+
+<head>
+    <style>
+        body{
+            background-color: lightsteelblue;
+        }
+    </style>
+    <!--
+        This is the head portion, it is behind the scenes
+    -->
+    <script src="code.js"></script>
+    <title>
+        Prof Prater's UATspace Page
+    </title>
+</head>
+
+<body>
+    <img src="UATspaceLogo-1.jpg">
+    <h1>UAT Space Program</h1>
+
+<script>
+           /*The alert function opens an alert window.
+        The text within the alert window originates from inside the parenthesis.*/
+        var alertText = "This is a test of the alert function(). It is stored within the alertText Variable."
+        //alert(alertText);
+    //The document.write prints the text on the main body of the webpage.
+    document.write("This is a test of the document.write function.");
+</script>
+
+    <p>
+        This is a test of the paragraph tags. A paragraph is more than one scentence. This is a paragraph.
+    </p>
+
+<br>
+<br>
+<div id="blastOffText">Blastoff Status will be presented here</div>
+<br>
+
+<button onclick="blastOffTimer();">
+    Start
+</button>
+<!--
+    The </br> is the way to create a break. Though at least for now it is not visually pleasing.
+-->
+<button>
+    Stop
+</button>
+<br>
+<br>
+
+<div id = "blastOffText"> This is where blastOff notifications appear</div>
+
+<br>
+<br>
+<script>
+/*adding two varibles together for a text read out.*/
+var docText = "This is the contents of my docTexts Variable";
+var addText= " and I like it!"
+
+document.write(docText+addText);
+</script>
+
+</body>
+
+</html>
